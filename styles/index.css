@@ -13,6 +13,13 @@
   background-size: cover;
   position: relative;
 }
+nav img {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 70px;
+  width: auto;
+}
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
