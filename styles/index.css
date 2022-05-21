@@ -26,9 +26,9 @@ nav img {
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     opacity: 0.9;
-    padding-bottom :10;
+    padding-bottom: 10;
   }
   .navbar li a, .navbar .navbar-brand { 
     color: #d5d5d5 !important;
