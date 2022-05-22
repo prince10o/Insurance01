@@ -26,16 +26,12 @@
     <div class="login-box">
       <h1 style="color:darkblue ;">LOGIN</h1>
       <form>
-        <label>Vehicle Registration Number</label>
-        <input type="text" required placeholder="Vehicle Reg.Number"/>
-        <br  />
-        
         <label>Username</label>
         <input type="text" required placeholder="Enter Full Name" />
         <br />
 
         <label>Password</label>
-        <input type="password" required placeholder="Enter Password" />
+        <input type="password" id="psw" name="psw" pattern"(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Enter Password" />
         <br />
         <br />
         <button type="submit" class="btn btn-block">Submit
