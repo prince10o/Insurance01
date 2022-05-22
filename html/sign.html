@@ -7,31 +7,49 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <style>
+      body {
+        background-color: rgb(228, 230, 231);
+        background-image: url('../assets/login.jpg');
+        background-repeat:no-repeat ;
+        background-attachment: fixed; 
+        background-size: 100% 110%;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
     <div class="signup-box">
-      <h1>Sign Up</h1>
-      <h4>It's free and only takes a minute</h4>
+      <h1 style="color:darkblue;">Sign Up</h1>
+      <h4 style="color:rgb(123, 115, 115); font-size: medium;">It's free and only takes a minute</h4>
       <form>
         <label>First Name</label>
-        <input type="text" required placeholder="" />
+        <input type="text" required placeholder="Enter First Name" />
         <label>Last Name</label>
-        <input type="text" required placeholder="" />
+        <input type="text" required placeholder="Enter Last Name" />
         <label>Email</label>
-        <input type="email" required placeholder="" />
+        <input type="email" required placeholder="Enter Email" />
         <label>Password</label>
-        <input type="password" required placeholder="" />
+        <input type="password" required placeholder="Enter Password" />
         <label>Confirm Password</label>
-        <input type="password" required placeholder="" />
-        <button type="submit">Submit</button>
+        <input type="password" required placeholder="Enter Password to Confirm" />
+        <button type="submit" class="btn btn-block">Submit
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+        <p style="color:crimson; font-size: small;">
+          By clicking the Sign Up button,you agree to our term and conditions<br />
+        </p>
+        <p class="para-2">
+          Already have an account? <a style="color:black;" href="login.html">Login here</a>
+        </p>
       </form>
-      <p>
-        By clicking the Sign Up button,you agree to our term and conditions<br />
-      </p>
+      
     </div>
 
-    <p class="para-2">
-      Already have an account? <a href="login.html">Login here</a>
-    </p>
+   
   </body>
 </html>
