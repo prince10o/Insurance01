@@ -14,13 +14,6 @@
   position: relative;
 }
 
-nav img {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  height: 70px;
-  width: auto;
-}
 
 .sub-menu-1 {
   display: none;
