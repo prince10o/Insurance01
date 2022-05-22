@@ -23,20 +23,34 @@
     </style>
   </head>
   <body>
+<script>  
+function matchpass(){  
+var firstpassword=document.f1.password.value;  
+var secondpassword=document.f1.password2.value;  
+  
+if(firstpassword==secondpassword){  
+return true;  
+}  
+else{  
+alert("password must be same!");  
+return false;  
+}  
+}  
+</script>  
     <div class="signup-box">
       <h1 style="color:darkblue;">Sign Up</h1>
       <h4 style="color:rgb(123, 115, 115); font-size: medium;">It's free and only takes a minute</h4>
       <form>
         <label>First Name</label>
-        <input type="text" required placeholder="Enter First Name" />
+        <input type="text" name="fname" required placeholder="Enter First Name" />
         <label>Last Name</label>
-        <input type="text" required placeholder="Enter First Name" />
+        <input type="text" name="lname" required placeholder="Enter Last Name" />
         <label>Last Name</label>
-        <input type="email" required placeholder="Enter Email" />
+        <input type="email" name="email" required placeholder="Enter Email" />
         <label>Password</label>
-        <input type="password" required placeholder="Enter Password" />
+        <input type="password" name="password"required placeholder="Enter Password" />
         <label>Confirm Password</label>
-        <input type="password" required placeholder="Enter Password to Confirm" />
+        <input type="password" name="confirmpsw" required placeholder="Enter Password to Confirm" />
         <button type="submit" class="btn btn-block">Submit
           <span class="glyphicon glyphicon-ok"></span>
         </button>
