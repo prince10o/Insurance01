@@ -23,15 +23,29 @@
     </style>
   </head>
   <body>
+    <script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
     <div class="login-box">
       <h1 style="color:darkblue ;">LOGIN</h1>
-      <form>
+      <form name="myform" method="post" onsubmit="return validateform()">
         <label>Username</label>
-        <input type="text" required placeholder="Enter Full Name" />
+        <input type="text" name="name" required placeholder="Enter Full Name" />
         <br />
 
         <label>Password</label>
-        <input type="password" id="psw" name="psw" pattern"(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Enter Password" />
+        <input type="password" id="psw" name="password" required placeholder="Enter Password" />
         <br />
         <br />
         <button type="submit" class="btn btn-block">Submit
