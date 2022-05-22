@@ -1,108 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
-   }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #d9e2e9;
-}
-.container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     max-width: 1200px;
-     flex-wrap: wrap;
-     padding: 40px 0;
-}
-
-
-
-
-
-.container .card {
-    position: relative;
-   width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
-                   inset -5px -5px 5px rgba(255,255,255,0.5),
-                    5px 5px 5px rgba(0,0,0,0.05),
-                    -5px -5px 5px rgba(255,0255,255,0.5);
-    border-radius: 15px;
-    margin: 30px;              
-}
-.container .card .box {
-position: absolute;
-top: 20px;;
-left: 20px;
-right: 20px;
-bottom: 20px;
-background: #ebf5fc;
-box-shadow: 0 10px 20px, rgb(0,0,0,0.1);
-border-radius: 15px;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: 0.5s;
-}
-.container .card:hover .box{
-    transform: translate(-50px);
-    box-shadow: 0 10px 40px rgb(0,0,0,0.2);
-    background: linear-gradient(45deg,#b95ce4,#4f29cd);
-}
-.container .card .box .content {
-    padding: 20px;;
-    text-align: center;
-}
-.container .card .box .content h2 {
-    position: absolute;
-    top: -10px;
-    right: 30px;
-    font-size: 8em;
-    color: rgba(0,0,0,0.02);
-    transition: 0.5s;
-    pointer-events: none;
-}
-.container .card:hover .box .content h2 {
-color: rgba(0,0,0,0.1);
-}
-.container .card .box .content h3 {
-    font-size: 1.8em;
-    color: rgb(61, 55, 55);
-    z-index: 1;
-    transition: 0.5s;
-}
-.container .card .box .content p {
- font-size: 1m;
-font-weight: 300;
-color: rgb(28, 27, 27);
-z-index: 1;
-transition: 0.5s;
-}
-.container .card .box .content a{
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: #03a9f4;
-    margin-top: 15px;
-    border-radius: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
-
-}
-.container .card:hover .box .content a{
-    background: #ff5685;
-}
-
-
-
-
-
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Plans</title>
+    <link rel="stylesheet" href="../styles/policies.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <style>
+      body {
+        background-color: rgb(228, 230, 231);
+        background-image: url('../assets/bg1.png');
+        background-repeat:no-repeat ;
+        background-attachment: fixed; 
+        background-size: 90% 80%;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>01</h2>
+            <h3>Package Policy</h3>
+            <p>
+              A package policy is an insurance cover which in addition to
+              covering third party liabilities, covers the insured against
+              damages caused to their own vehicle such as accidental damage,
+              fire, vandalism, acts of god, natural calamities, etc.
+            </p>
+            <a href="./package.html">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>02</h2>
+            <h3>Liability Policy</h3>
+            <p>
+              Liability Poilicy is the Only Policy covers any legal liability
+              you may face that occurs out of damage or loss to a third party
+              only - including death, injury, and/or property damage in the
+              event of an accident that involves to your insured vehicle.
+            </p>
+            <a href="./liability.html">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
