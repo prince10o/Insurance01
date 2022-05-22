@@ -3,29 +3,50 @@
   <head>
     <title>Login</title>
     <link rel="stylesheet" href="../styles/sign.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        background-color: rgb(228, 230, 231);
+        background-image: url('../assets/login.jpg');
+        background-repeat:no-repeat ;
+        background-attachment: fixed; 
+        background-size: 100% 110%;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
     <div class="login-box">
-      <h1>Login</h1>
+      <h1 style="color:darkblue ;">LOGIN</h1>
       <form>
         <label>Email</label>
-        <input type="email" required placeholder="" />
+        <input type="email" required placeholder="Enter Email" />
         <br />
 
         <label>Password</label>
-        <input type="password" required placeholder="" />
+        <input type="password" required placeholder="Enter Password" />
         <br />
         <br />
+        <button type="submit" class="btn btn-block">Submit
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+        </form>
+        <p class="para-2" >
+          Not have an account? <a style="color:black;" href="sign.html">Sign Up Here</a>
+        </p>
 
-        <button type="submit">Submit</button>
-      </form>
+        
+      </div>
+      
+      
     </div>
-    <p class="para-2">
-      Not have an account?<a href="sign.html">Sign Up Here</a>
-    </p>
+    
   </body>
 </html>
